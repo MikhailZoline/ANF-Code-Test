@@ -1,17 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PyX-fH-1PW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ssv-Pm-OFG">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Explore Card Table View Controller-->
+        <!--SwiftUI-->
+        <scene sceneID="fTc-Lf-9q9">
+            <objects>
+                <hostingController id="chJ-eF-v8Y" customClass="ANFExploreCardScrollController" customModule="ANF_Code_Test" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="SwiftUI" image="square.stack.3d.up.fill" catalog="system" id="My8-HP-Eg9"/>
+                    <navigationItem key="navigationItem" id="aHC-Ug-lax"/>
+                </hostingController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oOR-gK-pBj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-968" y="-528"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="FfK-Zu-kkE">
+            <objects>
+                <tabBarController id="ssv-Pm-OFG" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TnI-Ho-dhR">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="PyX-fH-1PW" kind="relationship" relationship="viewControllers" id="xXQ-Pg-ABP"/>
+                        <segue destination="chJ-eF-v8Y" kind="relationship" relationship="viewControllers" id="IAR-ux-CGq"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fKf-bD-CA3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1838" y="-186"/>
+        </scene>
+        <!--ExploreTable-->
         <scene sceneID="MX6-yV-Ik2">
             <objects>
-                <tableViewController id="PyX-fH-1PW" customClass="ANFExploreCardTableViewController" customModule="ANF_Code_Test" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="ANFExploreCardTableViewController" title="Explore Table" id="PyX-fH-1PW" userLabel="ExploreTable" customClass="ANFExploreCardTableViewController" customModule="ANF_Code_Test" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="UJA-3f-Li9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -55,13 +83,18 @@
                             <outlet property="delegate" destination="PyX-fH-1PW" id="atF-bM-8Y8"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="UIKit" image="shippingbox.fill" catalog="system" id="zbq-IS-HnC" userLabel="Table View"/>
+                    <navigationItem key="navigationItem" id="odK-OX-2y3"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="38S-jw-QXE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-210.1449275362319" y="61.607142857142854"/>
+            <point key="canvasLocation" x="-949" y="157"/>
         </scene>
     </scenes>
     <resources>
+        <image name="shippingbox.fill" catalog="system" width="128" height="123"/>
+        <image name="square.stack.3d.up.fill" catalog="system" width="120" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

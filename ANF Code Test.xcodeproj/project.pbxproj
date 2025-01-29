@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,19 @@
 		3E727EDF2672708B006C11AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E727EDD2672708B006C11AC /* LaunchScreen.storyboard */; };
 		3E727EEA2672708B006C11AC /* ANFExploreCardTableViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E727EE92672708B006C11AC /* ANFExploreCardTableViewControllerTests.swift */; };
 		3E727F03267281F7006C11AC /* ANFExploreCardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E727F02267281F7006C11AC /* ANFExploreCardTableViewController.swift */; };
+		BD012A4C2D4488A900A810A8 /* PromoCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD012A4B2D4488A900A810A8 /* PromoCardView.swift */; };
+		BD012A4E2D448A5F00A810A8 /* PromoCardDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD012A4D2D448A5F00A810A8 /* PromoCardDecodable.swift */; };
+		BD012A4F2D448A5F00A810A8 /* PromoCardDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD012A4D2D448A5F00A810A8 /* PromoCardDecodable.swift */; };
+		BD012A512D448EAF00A810A8 /* PromoCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD012A502D448EAE00A810A8 /* PromoCardViewModel.swift */; };
+		BD012A522D448EAF00A810A8 /* PromoCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD012A502D448EAE00A810A8 /* PromoCardViewModel.swift */; };
+		BD012A582D482A5D00A810A8 /* PromoCardDecodableTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD012A572D482A5D00A810A8 /* PromoCardDecodableTest.swift */; };
+		BD012A5A2D4860A300A810A8 /* PromoCardViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD012A592D4860A300A810A8 /* PromoCardViewModelTests.swift */; };
+		BDA082582D4953E800AB2F31 /* ExploreCardScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA082572D4953E800AB2F31 /* ExploreCardScrollView.swift */; };
+		BDA65B972D4985CC00C36D43 /* FontView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA65B962D4985CC00C36D43 /* FontView.swift */; };
+		BDA65B9D2D49B37300C36D43 /* PromoCardsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA65B9C2D49B37300C36D43 /* PromoCardsListViewModel.swift */; };
+		BDA65B9E2D49B37300C36D43 /* PromoCardsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA65B9C2D49B37300C36D43 /* PromoCardsListViewModel.swift */; };
+		BDB904F42D4A8CCD00971E6A /* PromoCardsListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB904F32D4A8CCD00971E6A /* PromoCardsListViewModelTests.swift */; };
+		BDDA9BD02D49EEAB00E08C69 /* ANFExploreCardScrollController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDA9BCF2D49EEAB00E08C69 /* ANFExploreCardScrollController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +53,16 @@
 		3E727EE92672708B006C11AC /* ANFExploreCardTableViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ANFExploreCardTableViewControllerTests.swift; sourceTree = "<group>"; };
 		3E727EEB2672708B006C11AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E727F02267281F7006C11AC /* ANFExploreCardTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ANFExploreCardTableViewController.swift; sourceTree = "<group>"; };
+		BD012A4B2D4488A900A810A8 /* PromoCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoCardView.swift; sourceTree = "<group>"; };
+		BD012A4D2D448A5F00A810A8 /* PromoCardDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoCardDecodable.swift; sourceTree = "<group>"; };
+		BD012A502D448EAE00A810A8 /* PromoCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoCardViewModel.swift; sourceTree = "<group>"; };
+		BD012A572D482A5D00A810A8 /* PromoCardDecodableTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoCardDecodableTest.swift; sourceTree = "<group>"; };
+		BD012A592D4860A300A810A8 /* PromoCardViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoCardViewModelTests.swift; sourceTree = "<group>"; };
+		BDA082572D4953E800AB2F31 /* ExploreCardScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreCardScrollView.swift; sourceTree = "<group>"; };
+		BDA65B962D4985CC00C36D43 /* FontView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontView.swift; sourceTree = "<group>"; };
+		BDA65B9C2D49B37300C36D43 /* PromoCardsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoCardsListViewModel.swift; sourceTree = "<group>"; };
+		BDB904F32D4A8CCD00971E6A /* PromoCardsListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoCardsListViewModelTests.swift; sourceTree = "<group>"; };
+		BDDA9BCF2D49EEAB00E08C69 /* ANFExploreCardScrollController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ANFExploreCardScrollController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +105,9 @@
 			isa = PBXGroup;
 			children = (
 				3E727F02267281F7006C11AC /* ANFExploreCardTableViewController.swift */,
+				BDDA9BCF2D49EEAB00E08C69 /* ANFExploreCardScrollController.swift */,
+				BDA0825A2D495B4B00AB2F31 /* SwiftUIViews */,
+				BDA082592D495B3D00AB2F31 /* SwiftUIViewModels */,
 				3E727ED226727088006C11AC /* AppDelegate.swift */,
 				3E727ED426727088006C11AC /* SceneDelegate.swift */,
 				3E727ED826727088006C11AC /* Main.storyboard */,
@@ -97,9 +123,40 @@
 			isa = PBXGroup;
 			children = (
 				3E727EE92672708B006C11AC /* ANFExploreCardTableViewControllerTests.swift */,
+				BD012A572D482A5D00A810A8 /* PromoCardDecodableTest.swift */,
+				BD012A592D4860A300A810A8 /* PromoCardViewModelTests.swift */,
 				3E727EEB2672708B006C11AC /* Info.plist */,
+				BDB904F32D4A8CCD00971E6A /* PromoCardsListViewModelTests.swift */,
 			);
 			path = "ANF Code TestTests";
+			sourceTree = "<group>";
+		};
+		BDA082592D495B3D00AB2F31 /* SwiftUIViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				BD012A4D2D448A5F00A810A8 /* PromoCardDecodable.swift */,
+				BD012A502D448EAE00A810A8 /* PromoCardViewModel.swift */,
+				BDA65B9C2D49B37300C36D43 /* PromoCardsListViewModel.swift */,
+			);
+			path = SwiftUIViewModels;
+			sourceTree = "<group>";
+		};
+		BDA0825A2D495B4B00AB2F31 /* SwiftUIViews */ = {
+			isa = PBXGroup;
+			children = (
+				BD012A4B2D4488A900A810A8 /* PromoCardView.swift */,
+				BDB904F52D4A8EC700971E6A /* Tools */,
+				BDA082572D4953E800AB2F31 /* ExploreCardScrollView.swift */,
+			);
+			path = SwiftUIViews;
+			sourceTree = "<group>";
+		};
+		BDB904F52D4A8EC700971E6A /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				BDA65B962D4985CC00C36D43 /* FontView.swift */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,8 +203,9 @@
 		3E727EC726727088006C11AC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1250;
-				LastUpgradeCheck = 1250;
+				LastUpgradeCheck = 1620;
 				TargetAttributes = {
 					3E727ECE26727088006C11AC = {
 						CreatedOnToolsVersion = 12.5;
@@ -203,9 +261,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD012A4C2D4488A900A810A8 /* PromoCardView.swift in Sources */,
 				3E727F03267281F7006C11AC /* ANFExploreCardTableViewController.swift in Sources */,
+				BDA082582D4953E800AB2F31 /* ExploreCardScrollView.swift in Sources */,
+				BDA65B972D4985CC00C36D43 /* FontView.swift in Sources */,
+				BDDA9BD02D49EEAB00E08C69 /* ANFExploreCardScrollController.swift in Sources */,
+				BDA65B9D2D49B37300C36D43 /* PromoCardsListViewModel.swift in Sources */,
+				BD012A512D448EAF00A810A8 /* PromoCardViewModel.swift in Sources */,
 				3E727ED326727088006C11AC /* AppDelegate.swift in Sources */,
 				3E727ED526727088006C11AC /* SceneDelegate.swift in Sources */,
+				BD012A4E2D448A5F00A810A8 /* PromoCardDecodable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +279,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E727EEA2672708B006C11AC /* ANFExploreCardTableViewControllerTests.swift in Sources */,
+				BDA65B9E2D49B37300C36D43 /* PromoCardsListViewModel.swift in Sources */,
+				BD012A4F2D448A5F00A810A8 /* PromoCardDecodable.swift in Sources */,
+				BD012A522D448EAF00A810A8 /* PromoCardViewModel.swift in Sources */,
+				BD012A582D482A5D00A810A8 /* PromoCardDecodableTest.swift in Sources */,
+				BDB904F42D4A8CCD00971E6A /* PromoCardsListViewModelTests.swift in Sources */,
+				BD012A5A2D4860A300A810A8 /* PromoCardViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +356,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -347,6 +419,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -374,6 +447,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RAHE33U4ZS;
 				INFOPLIST_FILE = "ANF Code Test/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -395,6 +469,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RAHE33U4ZS;
 				INFOPLIST_FILE = "ANF Code Test/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -410,12 +485,11 @@
 		3E727EFD2672708B006C11AC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "ANF Code TestTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -432,12 +506,11 @@
 		3E727EFE2672708B006C11AC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "ANF Code TestTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
