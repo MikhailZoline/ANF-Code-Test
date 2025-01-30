@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Models
 
 public struct ShopActionIdentifiable: Identifiable {
     public var id = UUID().uuidString

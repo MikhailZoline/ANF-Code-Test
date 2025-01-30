@@ -1,14 +1,7 @@
-//
-//  PromoCardDecodableTest.swift
-//  ANF Code TestTests
-//
-//  Created by Mikhail Zoline on 1/27/25.
-//
-
 import XCTest
-@testable import ANF_Code_Test
+@testable import Models
 
-final class PromoCardDecodableTest: XCTestCase {
+final class PromoCardDecodableTests: XCTestCase {
 
     var testInstance: PromoCardDecodable!
     override func setUpWithError() throws {

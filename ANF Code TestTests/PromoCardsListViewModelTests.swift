@@ -8,23 +8,18 @@
 import XCTest
 
 final class PromoCardsListViewModelTests: XCTestCase {
-    
-    var testInstance: PromoCardsListViewModel!
-    
-    override func setUpWithError() throws {
-        testInstance = .demoInstance
+
+    func test_PromoCardsListViewModel() async throws {
+        let testInstance: PromoCardsListViewModel = await .init()
         XCTAssertNotNil(testInstance)
+        await testInstance.getCardsAsync {
+            switch $0 {
+            case .success(let cards):
+                XCTAssertNotNil(cards)
+                XCTAssertEqual(cards.count, 10)
+            case .failure(_):
+                XCTAssertEqual(true, false)
+            }
+        }
     }
-
-    override func tearDownWithError() throws {
-        testInstance = nil
-        XCTAssertNil(testInstance)
-    }
-
-    func test_PromoCardsListViewModel() throws {
-        XCTAssertNotNil(testInstance)
-        XCTAssertNotNil(testInstance.promoCards)
-        XCTAssertEqual(testInstance.promoCards.count, 3)
-    }
-
 }

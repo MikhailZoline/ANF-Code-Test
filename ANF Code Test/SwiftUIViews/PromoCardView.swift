@@ -44,13 +44,6 @@ struct PromoCardView: View {
             }
             VStack {
                 ForEach(viewModel.shopActions) { action in
-//                    Link(action.decodable.title, destination: action.decodable.target)
-//                        .environment(\.openURL, OpenURLAction { url in
-//                            print("Open \(url)")
-//                            return .handled
-//                        })
-//                    
-//                    
                     Link(destination: action.decodable.target) {
                         Text(verbatim:  action.decodable.title)
                             .foregroundStyle(.black)
@@ -60,17 +53,6 @@ struct PromoCardView: View {
                             .frame(minWidth: 0, maxWidth: .infinity)
                             .padding()
                     }
-//                    Button {
-//                        
-//                    } label: {
-//                        Text(verbatim:  action.decodable.title)
-//                            .foregroundStyle(.black)
-//                            .font(.title2)
-//                            .fontWeight(.medium)
-//                            .fontDesign(.serif)
-//                            .frame(minWidth: 0, maxWidth: .infinity)
-//                            .padding()
-//                    }
                     .border(.black, width: 1.8)
                     .padding(.horizontal)
                 }

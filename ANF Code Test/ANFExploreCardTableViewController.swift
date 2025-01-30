@@ -4,12 +4,14 @@
 //
 
 import UIKit
+import Models
+import Networking
 
 extension UIViewController {
+    
     static var exploreData: [PromoCardDecodable]? {
-        if let filePath = Bundle.main.path(forResource: "exploreData", ofType: "json"),
-           let fileContent = try? Data(contentsOf: URL(fileURLWithPath: filePath),options: .mappedIfSafe),
-           let jsonDictionary = try? JSONDecoder().decode([PromoCardDecodable].self, from: fileContent) {
+        if let jsonContent = Networking.shared.jsonData(inBundle: .main),
+           let jsonDictionary = try? JSONDecoder().decode([PromoCardDecodable].self, from: jsonContent) {
             return jsonDictionary
         }
         return nil

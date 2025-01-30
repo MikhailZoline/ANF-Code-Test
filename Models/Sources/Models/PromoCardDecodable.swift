@@ -14,18 +14,18 @@ public struct PromoCardDecodable: Decodable {
         public var title: String
     }
     
-    var title: String
-    var backgroundImage: String
-    var content: [ShopActionDecodable]?
-    var promoMessage: String?
-    var topDescription: String?
-    var bottomDescription: String?
+    public var title: String
+    public var backgroundImage: String
+    public var content: [ShopActionDecodable]?
+    public var promoMessage: String?
+    public var topDescription: String?
+    public var bottomDescription: String?
     
-    static var demoInstance: PromoCardDecodable {
+    public static var demoInstance: PromoCardDecodable {
         return (try? JSONDecoder().decode(PromoCardDecodable.self, from: JSONSerialization.data(withJSONObject: PromoCardDecodable.testJson)))!
     }
     
-    static var testJson =
+    nonisolated(unsafe) static let testJson =
     [
       "title": "TOPS STARTING AT $12",
       "backgroundImage": "anf-20160527-app-m-shirts.jpg",
