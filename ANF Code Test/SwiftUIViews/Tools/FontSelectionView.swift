@@ -1,5 +1,5 @@
 //
-//  FontView.swift
+//  FontSelectionView.swift
 //  ANF Code Test
 //
 //  Created by Mikhail Zoline on 1/28/25.

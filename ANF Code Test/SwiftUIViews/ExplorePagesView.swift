@@ -1,5 +1,5 @@
 //
-//  ExploreCardScrollView.swift
+//  ExplorePagesView.swift
 //  ANF Code Test
 //
 //  Created by Mikhail Zoline on 1/28/25.
@@ -7,8 +7,10 @@
 
 import SwiftUI
 
-struct ExploreCardScrollView: View {
-    var viewModel: PromoCardsListViewModel = .init()
+public func identity<T>(_ t: T) -> T { t }
+
+struct ExplorePagesView: View {
+    var cardsProvider: PromoCardsProvider
     @State var promoCards: [PromoCardViewModel] = []
     var body: some View {
         NavigationView {
@@ -23,12 +25,12 @@ struct ExploreCardScrollView: View {
                         ProgressView()
                             .padding(.all, 100)
                     }
-                    
                 }.navigationTitle(Text("Abercrombie&Fitch"))
             }
         }
+        .padding(.top, 1)
         .task {
-            await viewModel.getCardsAsync {
+            await cardsProvider.getCachedCards {
                 switch $0 {
                 case .success(let cards):
                     promoCards = cards
@@ -40,5 +42,5 @@ struct ExploreCardScrollView: View {
 }
 
 #Preview {
-    ExploreCardScrollView()
+    ExplorePagesView(cardsProvider: .init(cacheSource: .locally))
 }

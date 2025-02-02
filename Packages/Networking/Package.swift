@@ -3,7 +3,7 @@
 
 import PackageDescription
 
-let targetDependency: Target.Dependency = .product(name: "Models", package: "Models")
+let targetDependencies: [Target.Dependency] = [.product(name: "Models", package: "Models"), .product(name: "Cache", package: "Cache")]
 
 let package = Package(
     name: "Networking",
@@ -16,21 +16,23 @@ let package = Package(
             targets: ["Networking"]),
     ],
     dependencies: [
-        .package(name: "Models", path: "../Models")
+        .package(name: "Models", path: "../Models"),
+        .package(name: "Cache", path: "../Cache")
     ],
     targets: [
         .target(
             name: "Networking",
-            dependencies: [
-                targetDependency
+            dependencies: targetDependencies,
+            resources: [
+                .copy("Resources/exploreData.json"),
             ]
         ),
         .testTarget(
             name: "NetworkingTests",
-            dependencies: ["Networking"],
-            resources: [
-                .copy("Resources/exploreData.json"),
-            ]
+            dependencies: ["Networking"]
+//            resources: [
+//                .copy("Resources/exploreData.json"),
+//            ]
         ),
     ]
 )

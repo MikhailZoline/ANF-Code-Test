@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Cache
 
 struct PromoCardView: View {
     var viewModel: PromoCardViewModel
@@ -17,7 +18,6 @@ struct PromoCardView: View {
                 Image(uiImage: img!)
                     .resizable()
                     .scaledToFit()
-                    .padding(.bottom)
             } else {
                 Image(systemName: "photo")
                     .resizable()
@@ -34,6 +34,7 @@ struct PromoCardView: View {
                 Text(verbatim: viewModel.promoMessage)
                     .font(.system(size: 18, weight: .medium, design: .monospaced))
             }
+            .padding()
             Spacer()
             if viewModel.bottomLink != nil &&
                 viewModel.bottomDescription != nil {
@@ -59,7 +60,11 @@ struct PromoCardView: View {
             }
         }
         .task {
-            img = UIImage(named: viewModel.decodable.backgroundImage)
+            if let cachedImage = ImageCache.shared.value(forKey: viewModel.decodable.backgroundImage as NSString) {
+                img = cachedImage
+            } else if let localImage = UIImage(named: viewModel.decodable.backgroundImage) {
+                img = localImage
+            }
         }
     }
 }

@@ -1,5 +1,5 @@
 //
-//  PromoCardsListViewModelTests.swift
+//  PromoCardsProviderTests.swift
 //  ANF Code TestTests
 //
 //  Created by Mikhail Zoline on 1/29/25.
@@ -7,12 +7,12 @@
 
 import XCTest
 
-final class PromoCardsListViewModelTests: XCTestCase {
+final class PromoCardsProviderTests: XCTestCase {
 
-    func test_PromoCardsListViewModel() async throws {
-        let testInstance: PromoCardsListViewModel = await .init()
+    func test_PromoCardsProvider() async throws {
+        let testInstance: PromoCardsProvider = await .init(cacheSource: .locally)
         XCTAssertNotNil(testInstance)
-        await testInstance.getCardsAsync {
+        await testInstance.getCachedCards {
             switch $0 {
             case .success(let cards):
                 XCTAssertNotNil(cards)

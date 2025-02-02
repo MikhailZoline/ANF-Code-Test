@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,14 +20,14 @@
 		BD012A522D448EAF00A810A8 /* PromoCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD012A502D448EAE00A810A8 /* PromoCardViewModel.swift */; };
 		BD012A5A2D4860A300A810A8 /* PromoCardViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD012A592D4860A300A810A8 /* PromoCardViewModelTests.swift */; };
 		BD302C2C2D4AAAFD00FF0A1F /* Models in Frameworks */ = {isa = PBXBuildFile; productRef = BD302C2B2D4AAAFD00FF0A1F /* Models */; };
-		BD59BA462D4AD07A00513AC8 /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = BD59BA452D4AD07A00513AC8 /* Networking */; };
-		BD59BA492D4AD09900513AC8 /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = BD59BA482D4AD09900513AC8 /* Networking */; };
-		BDA082582D4953E800AB2F31 /* ExploreCardScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA082572D4953E800AB2F31 /* ExploreCardScrollView.swift */; };
-		BDA65B972D4985CC00C36D43 /* FontView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA65B962D4985CC00C36D43 /* FontView.swift */; };
-		BDA65B9D2D49B37300C36D43 /* PromoCardsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA65B9C2D49B37300C36D43 /* PromoCardsListViewModel.swift */; };
-		BDA65B9E2D49B37300C36D43 /* PromoCardsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA65B9C2D49B37300C36D43 /* PromoCardsListViewModel.swift */; };
-		BDB904F42D4A8CCD00971E6A /* PromoCardsListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB904F32D4A8CCD00971E6A /* PromoCardsListViewModelTests.swift */; };
+		BDA082582D4953E800AB2F31 /* ExplorePagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA082572D4953E800AB2F31 /* ExplorePagesView.swift */; };
+		BDA65B972D4985CC00C36D43 /* FontSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA65B962D4985CC00C36D43 /* FontSelectionView.swift */; };
+		BDA65B9D2D49B37300C36D43 /* PromoCardsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA65B9C2D49B37300C36D43 /* PromoCardsProvider.swift */; };
+		BDA65B9E2D49B37300C36D43 /* PromoCardsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA65B9C2D49B37300C36D43 /* PromoCardsProvider.swift */; };
+		BDB904F42D4A8CCD00971E6A /* PromoCardsProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB904F32D4A8CCD00971E6A /* PromoCardsProviderTests.swift */; };
 		BDB904FB2D4AA89400971E6A /* Models in Frameworks */ = {isa = PBXBuildFile; productRef = BDB904FA2D4AA89400971E6A /* Models */; };
+		BDC284132D4C875C00085F73 /* Cache in Frameworks */ = {isa = PBXBuildFile; productRef = BDC284122D4C875C00085F73 /* Cache */; };
+		BDC284172D4C875C00085F73 /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = BDC284162D4C875C00085F73 /* Networking */; };
 		BDDA9BD02D49EEAB00E08C69 /* ANFExploreCardScrollController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDA9BCF2D49EEAB00E08C69 /* ANFExploreCardScrollController.swift */; };
 /* End PBXBuildFile section */
 
@@ -57,14 +57,16 @@
 		BD012A4B2D4488A900A810A8 /* PromoCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoCardView.swift; sourceTree = "<group>"; };
 		BD012A502D448EAE00A810A8 /* PromoCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoCardViewModel.swift; sourceTree = "<group>"; };
 		BD012A592D4860A300A810A8 /* PromoCardViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoCardViewModelTests.swift; sourceTree = "<group>"; };
-		BD59BA442D4AAE8400513AC8 /* Networking */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Networking; sourceTree = "<group>"; };
-		BDA082572D4953E800AB2F31 /* ExploreCardScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreCardScrollView.swift; sourceTree = "<group>"; };
-		BDA65B962D4985CC00C36D43 /* FontView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontView.swift; sourceTree = "<group>"; };
-		BDA65B9C2D49B37300C36D43 /* PromoCardsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoCardsListViewModel.swift; sourceTree = "<group>"; };
-		BDB904F32D4A8CCD00971E6A /* PromoCardsListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoCardsListViewModelTests.swift; sourceTree = "<group>"; };
-		BDB904F62D4AA4AB00971E6A /* Models */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Models; sourceTree = "<group>"; };
+		BDA082572D4953E800AB2F31 /* ExplorePagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorePagesView.swift; sourceTree = "<group>"; };
+		BDA65B962D4985CC00C36D43 /* FontSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontSelectionView.swift; sourceTree = "<group>"; };
+		BDA65B9C2D49B37300C36D43 /* PromoCardsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoCardsProvider.swift; sourceTree = "<group>"; };
+		BDB904F32D4A8CCD00971E6A /* PromoCardsProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoCardsProviderTests.swift; sourceTree = "<group>"; };
 		BDDA9BCF2D49EEAB00E08C69 /* ANFExploreCardScrollController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ANFExploreCardScrollController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		BDC2840F2D4C438900085F73 /* Packages */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Packages; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		3E727EE22672708B006C11AC /* Frameworks */ = {
@@ -79,9 +81,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD59BA492D4AD09900513AC8 /* Networking in Frameworks */,
-				BD59BA462D4AD07A00513AC8 /* Networking in Frameworks */,
 				BD302C2C2D4AAAFD00FF0A1F /* Models in Frameworks */,
+				BDC284172D4C875C00085F73 /* Networking in Frameworks */,
+				BDC284132D4C875C00085F73 /* Cache in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,8 +93,7 @@
 		3E727EC626727088006C11AC = {
 			isa = PBXGroup;
 			children = (
-				BD59BA442D4AAE8400513AC8 /* Networking */,
-				BDB904F62D4AA4AB00971E6A /* Models */,
+				BDC2840F2D4C438900085F73 /* Packages */,
 				3E727ED126727088006C11AC /* ANF Code Test */,
 				3E727EE82672708B006C11AC /* ANF Code TestTests */,
 				BDB904F72D4AA76500971E6A /* Frameworks */,
@@ -133,7 +134,7 @@
 				3E727EE92672708B006C11AC /* ANFExploreCardTableViewControllerTests.swift */,
 				BD012A592D4860A300A810A8 /* PromoCardViewModelTests.swift */,
 				3E727EEB2672708B006C11AC /* Info.plist */,
-				BDB904F32D4A8CCD00971E6A /* PromoCardsListViewModelTests.swift */,
+				BDB904F32D4A8CCD00971E6A /* PromoCardsProviderTests.swift */,
 			);
 			path = "ANF Code TestTests";
 			sourceTree = "<group>";
@@ -142,7 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				BD012A502D448EAE00A810A8 /* PromoCardViewModel.swift */,
-				BDA65B9C2D49B37300C36D43 /* PromoCardsListViewModel.swift */,
+				BDA65B9C2D49B37300C36D43 /* PromoCardsProvider.swift */,
 			);
 			path = SwiftUIViewModels;
 			sourceTree = "<group>";
@@ -152,7 +153,7 @@
 			children = (
 				BD012A4B2D4488A900A810A8 /* PromoCardView.swift */,
 				BDB904F52D4A8EC700971E6A /* Tools */,
-				BDA082572D4953E800AB2F31 /* ExploreCardScrollView.swift */,
+				BDA082572D4953E800AB2F31 /* ExplorePagesView.swift */,
 			);
 			path = SwiftUIViews;
 			sourceTree = "<group>";
@@ -160,7 +161,7 @@
 		BDB904F52D4A8EC700971E6A /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				BDA65B962D4985CC00C36D43 /* FontView.swift */,
+				BDA65B962D4985CC00C36D43 /* FontSelectionView.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -280,10 +281,10 @@
 			files = (
 				BD012A4C2D4488A900A810A8 /* PromoCardView.swift in Sources */,
 				3E727F03267281F7006C11AC /* ANFExploreCardTableViewController.swift in Sources */,
-				BDA082582D4953E800AB2F31 /* ExploreCardScrollView.swift in Sources */,
-				BDA65B972D4985CC00C36D43 /* FontView.swift in Sources */,
+				BDA082582D4953E800AB2F31 /* ExplorePagesView.swift in Sources */,
+				BDA65B972D4985CC00C36D43 /* FontSelectionView.swift in Sources */,
 				BDDA9BD02D49EEAB00E08C69 /* ANFExploreCardScrollController.swift in Sources */,
-				BDA65B9D2D49B37300C36D43 /* PromoCardsListViewModel.swift in Sources */,
+				BDA65B9D2D49B37300C36D43 /* PromoCardsProvider.swift in Sources */,
 				BD012A512D448EAF00A810A8 /* PromoCardViewModel.swift in Sources */,
 				3E727ED326727088006C11AC /* AppDelegate.swift in Sources */,
 				3E727ED526727088006C11AC /* SceneDelegate.swift in Sources */,
@@ -295,9 +296,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E727EEA2672708B006C11AC /* ANFExploreCardTableViewControllerTests.swift in Sources */,
-				BDA65B9E2D49B37300C36D43 /* PromoCardsListViewModel.swift in Sources */,
+				BDA65B9E2D49B37300C36D43 /* PromoCardsProvider.swift in Sources */,
 				BD012A522D448EAF00A810A8 /* PromoCardViewModel.swift in Sources */,
-				BDB904F42D4A8CCD00971E6A /* PromoCardsListViewModelTests.swift in Sources */,
+				BDB904F42D4A8CCD00971E6A /* PromoCardsProviderTests.swift in Sources */,
 				BD012A5A2D4860A300A810A8 /* PromoCardViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -459,14 +460,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RAHE33U4ZS;
+				DEVELOPMENT_TEAM = JTJ7BB989W;
 				INFOPLIST_FILE = "ANF Code Test/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.abercrombie.ANF-Code-Test";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.abercrombie.ANF-Code-Test-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -481,14 +482,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RAHE33U4ZS;
+				DEVELOPMENT_TEAM = JTJ7BB989W;
 				INFOPLIST_FILE = "ANF Code Test/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.abercrombie.ANF-Code-Test";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.abercrombie.ANF-Code-Test-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -586,17 +587,17 @@
 			isa = XCSwiftPackageProductDependency;
 			productName = Models;
 		};
-		BD59BA452D4AD07A00513AC8 /* Networking */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = Networking;
-		};
-		BD59BA482D4AD09900513AC8 /* Networking */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = Networking;
-		};
 		BDB904FA2D4AA89400971E6A /* Models */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Models;
+		};
+		BDC284122D4C875C00085F73 /* Cache */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Cache;
+		};
+		BDC284162D4C875C00085F73 /* Networking */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Networking;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

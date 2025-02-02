@@ -28,8 +28,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="PyX-fH-1PW" kind="relationship" relationship="viewControllers" id="xXQ-Pg-ABP"/>
                         <segue destination="chJ-eF-v8Y" kind="relationship" relationship="viewControllers" id="IAR-ux-CGq"/>
+                        <segue destination="PyX-fH-1PW" kind="relationship" relationship="viewControllers" id="xXQ-Pg-ABP"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fKf-bD-CA3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

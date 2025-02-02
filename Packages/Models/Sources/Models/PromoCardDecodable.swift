@@ -44,4 +44,3 @@ public struct PromoCardDecodable: Decodable {
       "bottomDescription": "*In stores & online. <a href=\\\"http://www.abercrombie.com/anf/media/legalText/viewDetailsText20160602_Tier_Promo_US.html\\\">Exclusions apply. See Details</a>"
     ] as [String : Any]
 }
-

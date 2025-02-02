@@ -4,14 +4,21 @@
 //
 
 import UIKit
+import Networking
+import Cache
+import Models
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+
+        Task.detached {
+            await Networking.shared.cacheModelsFromLocalJson()
+        }
+        Task.detached {
+            await Networking.shared.fetchAsyncCardsAndPhotos()
+        }
         return true
     }
 
